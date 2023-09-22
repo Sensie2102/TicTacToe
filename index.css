@@ -31,50 +31,26 @@ body{
     grid-template-columns: repeat(3, 1fr);
     
 }
-.grid > div{
+.griditem{
     background-color: #C4A77D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color :#454372;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
     padding: 20px;
     width: 45px;
     height: 45px;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
 }
 .grid>div:hover{
     background-color: #EF946C;
 }
-.griditem1{
-    border-right: 2px solid ;
-    border-bottom: 2px solid;
-    border-color: #454372;
+.griditem:nth-child(3n){
+    border-right: none;
 }
-.griditem2{
-    border-right: 2px solid ;
-    border-bottom: 2px solid;
-    border-color: #454372;
-}
-.griditem3{
-    border-bottom: 2px solid;
-    border-color: #454372;
-}
-.griditem4{
-    border-right: 2px solid ;
-    border-bottom: 2px solid;
-    border-color: #454372;
-}
-.griditem5{
-    border-right: 2px solid ;
-    border-bottom: 2px solid;
-    border-color: #454372;
-}
-.griditem6{
-    border-bottom: 2px solid;
-    border-color: #454372;
-}
-.griditem7{
-    border-right: 2px solid ;
-    border-color: #454372;
-}
-.griditem8{
-    border-right: 2px solid ;
-    border-color: #454372;
+.griditem:nth-child(6) ~ .griditem{
+    border-bottom: none;
 }
